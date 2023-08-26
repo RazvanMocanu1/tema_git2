@@ -2,6 +2,7 @@ const BunVenit = document.getElementById("BunVenit");
 const buttonComandaBurger = document.getElementById("buttonComandaBurger");
 const buttonComandaPizza = document.getElementById("buttonComandaPizza");
 const buttonComandaSpaghetti = document.getElementById("buttonComandaSpaghetti");
+const comandaAmplasata = document.getElementById("comenziAmplasate");
 const burger = document.getElementById("burgerImagine");
 const pizza = document.getElementById("pizzaImagine");
 const spaghetti = document.getElementById("spaghettiImagine");
@@ -21,6 +22,7 @@ function burger1 (){
     spaghetti.style.display="none";
     BunVenit.style.display="none";
     buttonComandaBurger.style.display="";
+    comandaAmplasata.style.display="none";
 
 }
 
@@ -34,6 +36,7 @@ function functiiComandaBurger (){
     BunVenit.style.display="";
     buttonComandaBurger.style.display="none";
     Pburger.innerText="";
+    comandaAmplasata.style.display="";
 
 }
 
@@ -47,6 +50,7 @@ function pizza1 (){
     spaghetti.style.display="none"
     BunVenit.style.display="none"
     buttonComandaPizza.style.display="";
+    comandaAmplasata.style.display="none";
 
 }
 
@@ -60,6 +64,7 @@ function functiiComandaPizza (){
     BunVenit.style.display="";
     buttonComandaPizza.style.display="none";
     Ppizza.innerText="";
+    comandaAmplasata.style.display="";
 
 }
 
@@ -74,6 +79,7 @@ function spaghetti1 (){
     pizza.style.display="none"
     BunVenit.style.display="none"
     buttonComandaSpaghetti.style.display="";
+    comandaAmplasata.style.display="none";
 
 }
 
@@ -87,6 +93,7 @@ function functiiComandaSpaghetti (){
     BunVenit.style.display="";
     buttonComandaSpaghetti.style.display="none";
     Pspaghetti.innerText="";
+    comandaAmplasata.style.display="";
 
 }
 
