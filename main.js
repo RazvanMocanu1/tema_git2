@@ -1,15 +1,21 @@
 const BunVenit = document.getElementById("BunVenit");
+
 const buttonComandaBurger = document.getElementById("buttonComandaBurger");
 const buttonComandaPizza = document.getElementById("buttonComandaPizza");
 const buttonComandaSpaghetti = document.getElementById("buttonComandaSpaghetti");
+
 const comandaAmplasata = document.getElementById("comenziAmplasate");
+const pretTotal = document.getElementById("pretTotal");
+
 const burger = document.getElementById("burgerImagine");
 const pizza = document.getElementById("pizzaImagine");
 const spaghetti = document.getElementById("spaghettiImagine");
+
 const Pburger = document.getElementById("burgerh1");
 const Ppizza = document.getElementById("pizzah1");
 const Pspaghetti = document.getElementById("spaghettih1");
-let numar = 0;
+let numar = 1;
+let bani = 0;
 
 buttonComandaBurger.style.display="none";
 buttonComandaPizza.style.display="none";
@@ -22,6 +28,7 @@ function burger1 (){
     pizza.style.display="none";
     spaghetti.style.display="none";
     BunVenit.style.display="none";
+    pretTotal.style.display="none";
     buttonComandaBurger.style.display="";
     comandaAmplasata.style.display="none";
 
@@ -38,7 +45,10 @@ function functiiComandaBurger (){
     buttonComandaBurger.style.display="none";
     Pburger.innerText="";
     comandaAmplasata.style.display="";
+    pretTotal.style.display="";
+    bani += 23.50
     comandaAmplasata.innerHTML="Comenzi Amplasate : " + numar++;
+    pretTotal.innerHTML="Pret Total : " + bani + " lei ";
 
 }
 
@@ -53,6 +63,7 @@ function pizza1 (){
     BunVenit.style.display="none"
     buttonComandaPizza.style.display="";
     comandaAmplasata.style.display="none";
+    pretTotal.style.display="none";
 
 }
 
@@ -67,7 +78,10 @@ function functiiComandaPizza (){
     buttonComandaPizza.style.display="none";
     Ppizza.innerText="";
     comandaAmplasata.style.display="";
+    pretTotal.style.display="";
+    bani += 28
     comandaAmplasata.innerHTML="Comenzi Amplasate : " + numar++;
+    pretTotal.innerHTML="Pret Total : " + bani + " lei ";
 
 }
 
@@ -83,6 +97,7 @@ function spaghetti1 (){
     BunVenit.style.display="none"
     buttonComandaSpaghetti.style.display="";
     comandaAmplasata.style.display="none";
+    pretTotal.style.display="none";
 
 }
 
@@ -97,7 +112,10 @@ function functiiComandaSpaghetti (){
     buttonComandaSpaghetti.style.display="none";
     Pspaghetti.innerText="";
     comandaAmplasata.style.display="";
+    pretTotal.style.display="";
+    bani += 19.99
     comandaAmplasata.innerHTML="Comenzi Amplasate : " + numar++;
+    pretTotal.innerHTML="Pret Total : " + bani + " lei ";
 
 }
 
