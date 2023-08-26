@@ -429,4 +429,50 @@ function functiiComandaSarmale (){
 
 buttonComandaSarmale.addEventListener("click", functiiComandaSarmale);
 
+function shaorma1 (){
+
+    spaghetti.style.display="none";
+    sarmale.style.display="none";
+    shaorma.style.display="none";
+    taco.style.display="none";
+    ramen.style.display="none";
+    burrito.style.display="none";
+    miciCuCartofi.style.display="none";
+    clatite.style.display="none";
+    Pshaorma.innerText="Shaorma " + ", Pret : 20 lei"
+    burger.style.display="none"
+    pizza.style.display="none"
+    BunVenit.style.display="none"
+    buttonComandaShaorma.style.display="";
+    comandaAmplasata.style.display="none";
+    pretTotal.style.display="none";
+
+}
+
+shaorma.addEventListener("click", shaorma1);
+
+function functiiComandaShaorma (){
+
+    burger.style.display="";
+    sarmale.style.display="";
+    shaorma.style.display="";
+    taco.style.display="";
+    burrito.style.display="";
+    pizza.style.display="";
+    clatite.style.display="";
+    ramen.style.display="";
+    spaghetti.style.display="";
+    miciCuCartofi.style.display="";
+    BunVenit.style.display="";
+    buttonComandaShaorma.style.display="none";
+    Pshaorma.innerText="";
+    comandaAmplasata.style.display="";
+    pretTotal.style.display="";
+    bani += 20
+    comandaAmplasata.innerHTML="Comenzi Amplasate : " + numar++;
+    pretTotal.innerHTML="Pret Total : " + bani + " lei ";
+
+}
+
+buttonComandaShaorma.addEventListener("click", functiiComandaShaorma);
 
