@@ -476,3 +476,49 @@ function functiiComandaShaorma (){
 
 buttonComandaShaorma.addEventListener("click", functiiComandaShaorma);
 
+function taco1 (){
+
+    spaghetti.style.display="none";
+    sarmale.style.display="none";
+    shaorma.style.display="none";
+    taco.style.display="none";
+    ramen.style.display="none";
+    burrito.style.display="none";
+    miciCuCartofi.style.display="none";
+    clatite.style.display="none";
+    Ptaco.innerText="Taco " + ", Pret : 15 lei"
+    burger.style.display="none"
+    pizza.style.display="none"
+    BunVenit.style.display="none"
+    buttonComandaTaco.style.display="";
+    comandaAmplasata.style.display="none";
+    pretTotal.style.display="none";
+
+}
+
+taco.addEventListener("click", taco1);
+
+function functiiComandaTaco (){
+
+    burger.style.display="";
+    sarmale.style.display="";
+    shaorma.style.display="";
+    taco.style.display="";
+    burrito.style.display="";
+    pizza.style.display="";
+    clatite.style.display="";
+    ramen.style.display="";
+    spaghetti.style.display="";
+    miciCuCartofi.style.display="";
+    BunVenit.style.display="";
+    buttonComandaTaco.style.display="none";
+    Ptaco.innerText="";
+    comandaAmplasata.style.display="";
+    pretTotal.style.display="";
+    bani += 15
+    comandaAmplasata.innerHTML="Comenzi Amplasate : " + numar++;
+    pretTotal.innerHTML="Pret Total : " + bani + " lei ";
+
+}
+
+buttonComandaTaco.addEventListener("click", functiiComandaTaco);
