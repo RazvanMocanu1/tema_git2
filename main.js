@@ -17,14 +17,27 @@ function burger1 (){
 
     burger.style.display="none";
     Pburger.innerText="Pret : 23.50 lei";
-    pizza.style.display="none"
-    spaghetti.style.display="none"
-    BunVenit.style.display="none"
+    pizza.style.display="none";
+    spaghetti.style.display="none";
+    BunVenit.style.display="none";
     buttonComandaBurger.style.display="";
 
 }
 
 burger.addEventListener("click", burger1);
+
+function functiiComandaBurger (){
+
+    burger.style.display="";
+    pizza.style.display="";
+    spaghetti.style.display="";
+    BunVenit.style.display="";
+    buttonComandaBurger.style.display="none";
+    Pburger.innerText="";
+
+}
+
+buttonComandaBurger.addEventListener("click", functiiComandaBurger);
 
 function pizza1 (){
 
@@ -39,6 +52,20 @@ function pizza1 (){
 
 pizza.addEventListener("click", pizza1);
 
+function functiiComandaPizza (){
+
+    burger.style.display="";
+    pizza.style.display="";
+    spaghetti.style.display="";
+    BunVenit.style.display="";
+    buttonComandaPizza.style.display="none";
+    Ppizza.innerText="";
+
+}
+
+buttonComandaPizza.addEventListener("click", functiiComandaPizza);
+
+
 function spaghetti1 (){
 
     spaghetti.style.display="none";
@@ -51,3 +78,16 @@ function spaghetti1 (){
 }
 
 spaghetti.addEventListener("click", spaghetti1);
+
+function functiiComandaSpaghetti (){
+
+    burger.style.display="";
+    pizza.style.display="";
+    spaghetti.style.display="";
+    BunVenit.style.display="";
+    buttonComandaSpaghetti.style.display="none";
+    Pspaghetti.innerText="";
+
+}
+
+buttonComandaSpaghetti.addEventListener("click", functiiComandaSpaghetti);
