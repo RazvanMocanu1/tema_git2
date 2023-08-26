@@ -9,6 +9,7 @@ const spaghetti = document.getElementById("spaghettiImagine");
 const Pburger = document.getElementById("burgerh1");
 const Ppizza = document.getElementById("pizzah1");
 const Pspaghetti = document.getElementById("spaghettih1");
+let numar = 0;
 
 buttonComandaBurger.style.display="none";
 buttonComandaPizza.style.display="none";
@@ -37,6 +38,7 @@ function functiiComandaBurger (){
     buttonComandaBurger.style.display="none";
     Pburger.innerText="";
     comandaAmplasata.style.display="";
+    comandaAmplasata.innerHTML="Comenzi Amplasate : " + numar++;
 
 }
 
@@ -65,6 +67,7 @@ function functiiComandaPizza (){
     buttonComandaPizza.style.display="none";
     Ppizza.innerText="";
     comandaAmplasata.style.display="";
+    comandaAmplasata.innerHTML="Comenzi Amplasate : " + numar++;
 
 }
 
@@ -94,7 +97,10 @@ function functiiComandaSpaghetti (){
     buttonComandaSpaghetti.style.display="none";
     Pspaghetti.innerText="";
     comandaAmplasata.style.display="";
+    comandaAmplasata.innerHTML="Comenzi Amplasate : " + numar++;
 
 }
 
 buttonComandaSpaghetti.addEventListener("click", functiiComandaSpaghetti);
+
+
