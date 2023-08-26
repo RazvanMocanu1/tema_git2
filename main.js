@@ -1,10 +1,13 @@
 const BunVenit = document.getElementById("BunVenit");
+const buttonComanda = document.getElementById("buttonComanda");
 const burger = document.getElementById("burgerImagine");
 const pizza = document.getElementById("pizzaImagine");
 const spaghetti = document.getElementById("spaghettiImagine");
 const Pburger = document.getElementById("burgerh1");
 const Ppizza = document.getElementById("pizzah1");
 const Pspaghetti = document.getElementById("spaghettih1");
+
+buttonComanda.style.display="none";
 
 function burger1 (){
 
@@ -13,6 +16,7 @@ function burger1 (){
     pizza.style.display="none"
     spaghetti.style.display="none"
     BunVenit.style.display="none"
+    buttonComanda.style.display="";
 
 }
 
@@ -25,6 +29,7 @@ function pizza1 (){
     burger.style.display="none"
     spaghetti.style.display="none"
     BunVenit.style.display="none"
+    buttonComanda.style.display="";
 
 }
 
@@ -37,6 +42,7 @@ function spaghetti1 (){
     burger.style.display="none"
     pizza.style.display="none"
     BunVenit.style.display="none"
+    buttonComanda.style.display="";
 
 }
 
