@@ -24,7 +24,7 @@ buttonComandaSpaghetti.style.display="none";
 function burger1 (){
 
     burger.style.display="none";
-    Pburger.innerText="Pret : 23.50 lei";
+    Pburger.innerText="Burger Max " + ", Pret : 23.50 lei";
     pizza.style.display="none";
     spaghetti.style.display="none";
     BunVenit.style.display="none";
@@ -57,7 +57,7 @@ buttonComandaBurger.addEventListener("click", functiiComandaBurger);
 function pizza1 (){
 
     pizza.style.display="none";
-    Ppizza.innerText="Pret : 28 lei";
+    Ppizza.innerText="Pizza Peperoni " + ", Pret : 28 lei";
     burger.style.display="none"
     spaghetti.style.display="none"
     BunVenit.style.display="none"
@@ -91,7 +91,7 @@ buttonComandaPizza.addEventListener("click", functiiComandaPizza);
 function spaghetti1 (){
 
     spaghetti.style.display="none";
-    Pspaghetti.innerText="Pret : 19.99 lei"
+    Pspaghetti.innerText="Paste Carbonara " + ", Pret : 19.99 lei"
     burger.style.display="none"
     pizza.style.display="none"
     BunVenit.style.display="none"
