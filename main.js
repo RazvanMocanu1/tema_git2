@@ -6,6 +6,7 @@ const buttonComandaPizza = document.getElementById("buttonComandaPizza");
 const buttonComandaSpaghetti = document.getElementById("buttonComandaSpaghetti");
 const buttonComandaMiciCuCartofi = document.getElementById("buttonComandaMiciCuCartofi");
 const buttonComandaClatite = document.getElementById("buttonComandaClatite");
+const buttonComandaRamen = document.getElementById("buttonComandaRamen");
 
 const comandaAmplasata = document.getElementById("comenziAmplasate");
 const pretTotal = document.getElementById("pretTotal");
@@ -16,10 +17,12 @@ const pizza = document.getElementById("pizzaImagine");
 const spaghetti = document.getElementById("spaghettiImagine");
 const miciCuCartofi = document.getElementById("miciCuCartofiImagine");
 const clatite = document.getElementById("clatiteImagine");
+const ramen = document.getElementById("ramenImagine");
 
 const Pburger = document.getElementById("burgerh1");
 const Pburrito = document.getElementById("burritoh1");
 const Ppizza = document.getElementById("pizzah1");
+const Pramen = document.getElementById("ramenh1");
 const Pspaghetti = document.getElementById("spaghettih1");
 const PmiciCuCartofi = document.getElementById("miciCuCartofih1");
 const Pclatite = document.getElementById("clatiteh1");
@@ -32,10 +35,12 @@ buttonComandaPizza.style.display="none";
 buttonComandaSpaghetti.style.display="none";
 buttonComandaMiciCuCartofi.style.display="none";
 buttonComandaClatite.style.display="none";
+buttonComandaRamen.style.display="none";
 
 function burger1 (){
 
     burger.style.display="none";
+    ramen.style.display="none";
     burrito.style.display="none";
     clatite.style.display="none";
     Pburger.innerText="Burger Max " + ", Pret : 23.50 lei";
@@ -55,6 +60,7 @@ function functiiComandaBurger (){
 
     burger.style.display="";
     burrito.style.display="";
+    ramen.style.display="";
     clatite.style.display="";
     pizza.style.display="";
     spaghetti.style.display="";
@@ -75,6 +81,7 @@ buttonComandaBurger.addEventListener("click", functiiComandaBurger);
 function burrito1 (){
 
     burger.style.display="none";
+    ramen.style.display="none";
     burrito.style.display="none";
     clatite.style.display="none";
     Pburrito.innerText="Burrito Mexican " + ", Pret : 22.90 lei";
@@ -93,6 +100,7 @@ burrito.addEventListener("click", burrito1);
 function functiiComandaBurrito (){
 
     burger.style.display="";
+    ramen.style.display="";
     burrito.style.display="";
     clatite.style.display="";
     pizza.style.display="";
@@ -115,6 +123,7 @@ function pizza1 (){
 
     pizza.style.display="none";
     burrito.style.display="none";
+    ramen.style.display="none";
     clatite.style.display="none";
     Ppizza.innerText="Pizza Peperoni " + ", Pret : 28 lei";
     burger.style.display="none"
@@ -132,6 +141,7 @@ pizza.addEventListener("click", pizza1);
 function functiiComandaPizza (){
 
     burger.style.display="";
+    ramen.style.display="";
     burrito.style.display="";
     clatite.style.display="";
     pizza.style.display="";
@@ -154,6 +164,7 @@ buttonComandaPizza.addEventListener("click", functiiComandaPizza);
 function spaghetti1 (){
 
     spaghetti.style.display="none";
+    ramen.style.display="none";
     miciCuCartofi.style.display="none";
     clatite.style.display="none";
     burrito.style.display="none";
@@ -173,6 +184,7 @@ function functiiComandaSpaghetti (){
 
     burger.style.display="";
     burrito.style.display="";
+    ramen.style.display="";
     pizza.style.display="";
     clatite.style.display="";
     spaghetti.style.display="";
@@ -193,6 +205,7 @@ buttonComandaSpaghetti.addEventListener("click", functiiComandaSpaghetti);
 function miciCuCartofi1 (){
 
     spaghetti.style.display="none";
+    ramen.style.display="none";
     burrito.style.display="none";
     miciCuCartofi.style.display="none";
     clatite.style.display="none";
@@ -211,6 +224,7 @@ miciCuCartofi.addEventListener("click", miciCuCartofi1);
 function functiiComandaMiciCuCartofi (){
 
     burger.style.display="";
+    ramen.style.display="";
     burrito.style.display="";
     pizza.style.display="";
     clatite.style.display="";
@@ -234,6 +248,7 @@ buttonComandaMiciCuCartofi.addEventListener("click", functiiComandaMiciCuCartofi
 function clatite1 (){
 
     spaghetti.style.display="none";
+    ramen.style.display="none";
     burrito.style.display="none";
     miciCuCartofi.style.display="none";
     clatite.style.display="none";
@@ -255,6 +270,7 @@ function functiiComandaClatite (){
     burrito.style.display="";
     pizza.style.display="";
     clatite.style.display="";
+    ramen.style.display="";
     spaghetti.style.display="";
     miciCuCartofi.style.display="";
     BunVenit.style.display="";
@@ -269,4 +285,45 @@ function functiiComandaClatite (){
 }
 
 buttonComandaClatite.addEventListener("click", functiiComandaClatite);
+
+function ramen1 (){
+
+    spaghetti.style.display="none";
+    ramen.style.display="none";
+    burrito.style.display="none";
+    miciCuCartofi.style.display="none";
+    clatite.style.display="none";
+    Pramen.innerText="Ramen " + ", Pret : 18.90 lei"
+    burger.style.display="none"
+    pizza.style.display="none"
+    BunVenit.style.display="none"
+    buttonComandaRamen.style.display="";
+    comandaAmplasata.style.display="none";
+    pretTotal.style.display="none";
+
+}
+
+ramen.addEventListener("click", ramen1);
+
+function functiiComandaRamen (){
+
+    burger.style.display="";
+    burrito.style.display="";
+    pizza.style.display="";
+    clatite.style.display="";
+    ramen.style.display="";
+    spaghetti.style.display="";
+    miciCuCartofi.style.display="";
+    BunVenit.style.display="";
+    buttonComandaRamen.style.display="none";
+    Pramen.innerText="";
+    comandaAmplasata.style.display="";
+    pretTotal.style.display="";
+    bani += 18.90
+    comandaAmplasata.innerHTML="Comenzi Amplasate : " + numar++;
+    pretTotal.innerHTML="Pret Total : " + bani + " lei ";
+
+}
+
+buttonComandaRamen.addEventListener("click", functiiComandaRamen);
 
