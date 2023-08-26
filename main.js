@@ -26,7 +26,7 @@ pizza.addEventListener("click", pizza1);
 function spaghetti1 (){
 
     spaghetti.style.display="none";
-    Pspaghetti.innerText="Pret : 18.99 lei"
+    Pspaghetti.innerText="Pret : 19.99 lei"
 
 }
 
