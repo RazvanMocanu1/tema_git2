@@ -1,5 +1,4 @@
 const BunVenit = document.getElementById("BunVenit");
-const buttonComanda = document.getElementById("buttonComanda");
 const burger = document.getElementById("burgerImagine");
 const pizza = document.getElementById("pizzaImagine");
 const spaghetti = document.getElementById("spaghettiImagine");
