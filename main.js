@@ -5,6 +5,7 @@ const buttonComandaBurrito = document.getElementById("buttonComandaBurrito");
 const buttonComandaPizza = document.getElementById("buttonComandaPizza");
 const buttonComandaSpaghetti = document.getElementById("buttonComandaSpaghetti");
 const buttonComandaMiciCuCartofi = document.getElementById("buttonComandaMiciCuCartofi");
+const buttonComandaClatite = document.getElementById("buttonComandaClatite");
 
 const comandaAmplasata = document.getElementById("comenziAmplasate");
 const pretTotal = document.getElementById("pretTotal");
@@ -14,12 +15,14 @@ const burrito = document.getElementById("burritoImagine");
 const pizza = document.getElementById("pizzaImagine");
 const spaghetti = document.getElementById("spaghettiImagine");
 const miciCuCartofi = document.getElementById("miciCuCartofiImagine");
+const clatite = document.getElementById("clatiteImagine");
 
 const Pburger = document.getElementById("burgerh1");
 const Pburrito = document.getElementById("burritoh1");
 const Ppizza = document.getElementById("pizzah1");
 const Pspaghetti = document.getElementById("spaghettih1");
 const PmiciCuCartofi = document.getElementById("miciCuCartofih1");
+const Pclatite = document.getElementById("clatiteh1");
 let numar = 1;
 let bani = 0;
 
@@ -28,11 +31,13 @@ buttonComandaBurrito.style.display="none";
 buttonComandaPizza.style.display="none";
 buttonComandaSpaghetti.style.display="none";
 buttonComandaMiciCuCartofi.style.display="none";
+buttonComandaClatite.style.display="none";
 
 function burger1 (){
 
     burger.style.display="none";
     burrito.style.display="none";
+    clatite.style.display="none";
     Pburger.innerText="Burger Max " + ", Pret : 23.50 lei";
     pizza.style.display="none";
     spaghetti.style.display="none";
@@ -50,6 +55,7 @@ function functiiComandaBurger (){
 
     burger.style.display="";
     burrito.style.display="";
+    clatite.style.display="";
     pizza.style.display="";
     spaghetti.style.display="";
     miciCuCartofi.style.display="";
@@ -70,6 +76,7 @@ function burrito1 (){
 
     burger.style.display="none";
     burrito.style.display="none";
+    clatite.style.display="none";
     Pburrito.innerText="Burrito Mexican " + ", Pret : 22.90 lei";
     pizza.style.display="none";
     spaghetti.style.display="none";
@@ -87,6 +94,7 @@ function functiiComandaBurrito (){
 
     burger.style.display="";
     burrito.style.display="";
+    clatite.style.display="";
     pizza.style.display="";
     spaghetti.style.display="";
     miciCuCartofi.style.display="";
@@ -107,6 +115,7 @@ function pizza1 (){
 
     pizza.style.display="none";
     burrito.style.display="none";
+    clatite.style.display="none";
     Ppizza.innerText="Pizza Peperoni " + ", Pret : 28 lei";
     burger.style.display="none"
     spaghetti.style.display="none"
@@ -124,6 +133,7 @@ function functiiComandaPizza (){
 
     burger.style.display="";
     burrito.style.display="";
+    clatite.style.display="";
     pizza.style.display="";
     spaghetti.style.display="";
     miciCuCartofi.style.display="";
@@ -145,6 +155,7 @@ function spaghetti1 (){
 
     spaghetti.style.display="none";
     miciCuCartofi.style.display="none";
+    clatite.style.display="none";
     burrito.style.display="none";
     Pspaghetti.innerText="Paste Carbonara " + ", Pret : 19.99 lei"
     burger.style.display="none"
@@ -163,6 +174,7 @@ function functiiComandaSpaghetti (){
     burger.style.display="";
     burrito.style.display="";
     pizza.style.display="";
+    clatite.style.display="";
     spaghetti.style.display="";
     miciCuCartofi.style.display="";
     BunVenit.style.display="";
@@ -183,6 +195,7 @@ function miciCuCartofi1 (){
     spaghetti.style.display="none";
     burrito.style.display="none";
     miciCuCartofi.style.display="none";
+    clatite.style.display="none";
     PmiciCuCartofi.innerText="Mici Cu Cartofi " + ", Pret : 15.50 lei"
     burger.style.display="none"
     pizza.style.display="none"
@@ -200,6 +213,7 @@ function functiiComandaMiciCuCartofi (){
     burger.style.display="";
     burrito.style.display="";
     pizza.style.display="";
+    clatite.style.display="";
     spaghetti.style.display="";
     miciCuCartofi.style.display="";
     BunVenit.style.display="";
@@ -217,5 +231,42 @@ buttonComandaMiciCuCartofi.addEventListener("click", functiiComandaMiciCuCartofi
 
 
 
+function clatite1 (){
 
+    spaghetti.style.display="none";
+    burrito.style.display="none";
+    miciCuCartofi.style.display="none";
+    clatite.style.display="none";
+    Pclatite.innerText="Clatite Americane " + ", Pret : 12.50 lei"
+    burger.style.display="none"
+    pizza.style.display="none"
+    BunVenit.style.display="none"
+    buttonComandaClatite.style.display="";
+    comandaAmplasata.style.display="none";
+    pretTotal.style.display="none";
+
+}
+
+clatite.addEventListener("click", clatite1);
+
+function functiiComandaClatite (){
+
+    burger.style.display="";
+    burrito.style.display="";
+    pizza.style.display="";
+    clatite.style.display="";
+    spaghetti.style.display="";
+    miciCuCartofi.style.display="";
+    BunVenit.style.display="";
+    buttonComandaClatite.style.display="none";
+    Pclatite.innerText="";
+    comandaAmplasata.style.display="";
+    pretTotal.style.display="";
+    bani += 12.50
+    comandaAmplasata.innerHTML="Comenzi Amplasate : " + numar++;
+    pretTotal.innerHTML="Pret Total : " + bani + " lei ";
+
+}
+
+buttonComandaClatite.addEventListener("click", functiiComandaClatite);
 
